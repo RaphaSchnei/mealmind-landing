@@ -1,79 +1,158 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datenschutzerklärung — MealMind</title>
-  <meta name="robots" content="noindex, follow" />
-  <link rel="canonical" href="https://mealmind.ch/datenschutz" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --green-dark: #2d5220;
-      --green-light: #9ecb8c;
-      --green-pale: #d6ebb0;
-      --cream: #f9f6f0;
-      --white: #ffffff;
-      --text: #1a1510;
-      --text-muted: #6b6257;
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); line-height: 1.75; font-size: 16px; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerklärung — MealMind</title>
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --forest: #1e3518;
+  --leaf:   #2d5220;
+  --herb:   #3d6e2a;
+  --mint:   #9ecb8c;
+  --frost:  #d4eacb;
+  --ink:    #1a1510;
+  --stone:  #7a756d;
+  --cream:  #f9f6f0;
+  --warm:   #f0ebe0;
+  --card:   #ffffff;
+  --border: rgba(30,53,24,.1);
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--leaf); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-    /* Nav */
-    nav { background: var(--white); border-bottom: 1px solid rgba(45,82,32,.1); padding: 0 24px; }
-    .nav-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
-    .logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--green-dark); text-decoration: none; display: flex; align-items: center; gap: 10px; }
-    .back-link { font-size: .88rem; color: var(--text-muted); text-decoration: none; display: flex; align-items: center; gap: 6px; }
-    .back-link:hover { color: var(--green-dark); }
+nav {
+  background: rgba(249,246,240,.95);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--forest);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-logo-dot { width: 8px; height: 8px; background: #6a9e52; border-radius: 50%; }
+.back-link { font-size: 14px; color: var(--stone); transition: color .2s; }
+.back-link:hover { color: var(--leaf); text-decoration: none; }
 
-    /* Content */
-    .container { max-width: 860px; margin: 0 auto; padding: 56px 24px 96px; }
-    .page-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; color: var(--text); margin-bottom: 8px; }
-    .page-date { font-size: .85rem; color: var(--text-muted); margin-bottom: 48px; }
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 72px 40px 96px;
+}
+.page-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--herb);
+  margin-bottom: 12px;
+}
+.page-title {
+  font-family: 'Lora', serif;
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -.5px;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.page-date {
+  font-size: 13px;
+  color: var(--stone);
+  margin-bottom: 56px;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: .06em;
+}
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 40px 0 12px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+h3 { font-size: 15px; font-weight: 500; color: var(--ink); margin: 20px 0 8px; }
+p { color: var(--stone); font-size: 15px; line-height: 1.8; margin-bottom: 10px; }
+p:last-child { margin-bottom: 0; }
+ul, ol { color: var(--stone); font-size: 15px; padding-left: 20px; margin-bottom: 12px; line-height: 1.8; }
+li { margin-bottom: 4px; }
+.index { list-style: none; padding: 0; background: var(--card); border: 1px solid var(--border); border-radius: 4px; padding: 20px 24px; margin-bottom: 8px; }
+.index li { margin-bottom: 6px; }
+.index a { color: var(--leaf); font-size: 14px; }
+strong { color: var(--ink); font-weight: 500; }
 
-    h2 { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 600; color: var(--text); margin: 40px 0 14px; padding-top: 8px; border-top: 1px solid rgba(45,82,32,.1); }
-    h3 { font-size: 1rem; font-weight: 600; color: var(--text); margin: 24px 0 10px; }
-    p { color: var(--text-muted); margin-bottom: 14px; font-size: .95rem; }
-    ul { color: var(--text-muted); padding-left: 20px; margin-bottom: 14px; font-size: .95rem; }
-    li { margin-bottom: 6px; }
-    a { color: var(--green-dark); }
-    a:hover { text-decoration: underline; }
-    strong { color: var(--text); font-weight: 500; }
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,.3);
+  padding: 32px 40px;
+}
+.footer-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-logo { font-family: 'Lora', serif; font-size: 16px; color: rgba(255,255,255,.45); }
+.footer-links { display: flex; gap: 20px; }
+.footer-links a { font-size: 13px; color: rgba(255,255,255,.3); transition: color .2s; }
+.footer-links a:hover { color: rgba(255,255,255,.6); text-decoration: none; }
+.footer-copy { font-size: 12px; }
 
-    /* Index */
-    ul.index { list-style: none; padding: 0; background: var(--white); border-radius: 12px; padding: 20px 24px; margin-bottom: 40px; border: 1px solid rgba(45,82,32,.08); }
-    ul.index li { margin-bottom: 4px; }
-    ul.index a { color: var(--green-dark); font-size: .9rem; text-decoration: none; }
-    ul.index a:hover { text-decoration: underline; }
-
-    /* Seal */
-    .seal { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(45,82,32,.1); font-size: .82rem; color: var(--text-muted); }
-    .seal a { color: var(--text-muted); }
-
-    /* Footer */
-    footer { background: #1a1510; padding: 28px 24px; text-align: center; }
-    footer p { color: rgba(255,255,255,.35); font-size: .82rem; margin: 0; }
-    footer a { color: rgba(255,255,255,.45); text-decoration: none; margin: 0 12px; }
-    footer a:hover { color: rgba(255,255,255,.7); }
-  </style>
+@media (max-width: 600px) {
+  .nav-inner, .container { padding-left: 24px; padding-right: 24px; }
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+}
+</style>
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
-    <a href="/" class="logo">
-      <svg width="28" height="28" viewBox="0 0 56 56" fill="none"><rect width="56" height="56" rx="14" fill="#2d5220"/><circle cx="17" cy="19" r="3" fill="#9ecb8c"/><circle cx="28" cy="19" r="3" fill="#9ecb8c"/><circle cx="39" cy="19" r="3" fill="#9ecb8c"/><circle cx="17" cy="28" r="3" fill="#9ecb8c"/><circle cx="28" cy="28" r="3" fill="#9ecb8c"/><circle cx="39" cy="28" r="3" fill="#9ecb8c"/><circle cx="17" cy="37" r="3" fill="#9ecb8c"/><circle cx="28" cy="37" r="3" fill="#9ecb8c"/><path d="M39 43 C34 43 31 39 31 35 C31 31 34 28 39 28 C44 28 47 31 47 35 C47 39 44 43 39 43 Z" fill="#9ecb8c"/><line x1="39" y1="43" x2="39" y2="29" stroke="#2d5220" stroke-width="1.2" stroke-linecap="round"/></svg>
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-dot"></div>
       MealMind
     </a>
-    <a href="/" class="back-link">← Zurück zur Startseite</a>
+    <a href="index.html" class="back-link">← Zurück zur Startseite</a>
   </div>
 </nav>
 
 <div class="container">
+  <div class="page-eyebrow">Rechtliches</div>
+  
   <h1 class="page-title">Datenschutzerklärung</h1>
   <p class="page-date">Stand: 26. Mai 2026</p>
 
@@ -104,7 +183,7 @@
   <h2 id="m3">Verantwortlicher</h2>
   <p>Raphael Schneider<br>Zelgstrasse 2<br>3638 Blumenstein</p>
   <p>E-Mail-Adresse: <a href="mailto:raphael@mealmind.ch">raphael@mealmind.ch</a></p>
-  <p>Impressum: <a href="https://mealmind.ch/impressum" target="_blank">https://mealmind.ch/impressum</a></p>
+  <p>Impressum: <a href="impressum.html" target="_blank">https://mealmind.ch/impressum</a></p>
 
   <h2 id="mOverview">Übersicht der Verarbeitungen</h2>
   <p>Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.</p>
@@ -217,16 +296,19 @@
   </ul>
 
   <p class="seal"><a href="https://datenschutz-generator.de/" target="_blank" rel="noopener noreferrer nofollow">Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke</a></p>
+
 </div>
 
 <footer>
-  <p>
-    <a href="/">Startseite</a>
-    <a href="/datenschutz">Datenschutz</a>
-    <a href="/impressum">Impressum</a>
-    <a href="mailto:raphael@mealmind.ch">Kontakt</a>
-  </p>
-  <p style="margin-top:10px;">© MealMind 2026 · Made in Switzerland 🇨🇭</p>
+  <div class="footer-inner">
+    <div class="footer-logo">MealMind</div>
+    <div class="footer-links">
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="mailto:raphael@mealmind.ch">Kontakt</a>
+    </div>
+    <div class="footer-copy">© MealMind 2025 · Made in Switzerland 🇨🇭</div>
+  </div>
 </footer>
 
 </body>
